@@ -1,0 +1,373 @@
+/* ОСНОВНЫЕ НАСТРОЙКИ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ОБЩИЕ НАСТРОЙКИ СЕКЦИЙ */
+
+section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 60px;
+    border-radius: 20px;
+}
+
+
+/* ЗАГОЛОВКИ */
+
+h1,
+h2,
+h3 {
+    color: #d6a84f;
+}
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+/* ШАПКА */
+
+.header {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px 30px;
+
+    background-color: #151515;
+    border: 1px solid #d6a84f;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.navigation {
+    display: flex;
+    gap: 25px;
+}
+
+.navigation a {
+    color: #d6a84f;
+    text-decoration: none;
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #ffffff;
+}
+
+
+/* ГЛАВНЫЙ ЭКРАН */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #151515;
+    border: 1px solid #2a2a2a;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* КНОПКА */
+
+.button {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 15px 30px;
+
+    background-color: #d6a84f;
+    color: #111111;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(214, 168, 79, 0.3);
+}
+
+
+/* О КОМПАНИИ */
+
+.about {
+    background-color: #151515;
+    border-left: 4px solid #d6a84f;
+
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* УСЛУГИ */
+
+.services {
+    background-color: #111111;
+}
+
+.services-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    flex: 1;
+    min-width: 220px;
+    padding: 30px;
+
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    border-color: #d6a84f;
+}
+
+.service-card p {
+    line-height: 1.6;
+}
+
+
+/* НАШИ РАБОТЫ */
+
+.works {
+    background-color: #151515;
+    text-align: center;
+}
+
+.works p {
+    font-size: 18px;
+}
+
+
+/* ПРЕИМУЩЕСТВА */
+
+.advantages {
+    background-color: #111111;
+}
+
+.advantages-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.advantage {
+    flex: 1;
+    min-width: 220px;
+
+    padding: 25px;
+
+    background-color: #1a1a1a;
+    border-radius: 15px;
+
+    text-align: center;
+
+    border: 1px solid #333333;
+}
+
+.advantage p {
+    line-height: 1.6;
+}
+
+
+/* КОНТАКТЫ */
+
+.contacts {
+    background-color: #151515;
+    text-align: center;
+
+    border: 1px solid #d6a84f;
+}
+
+.contacts p {
+    font-size: 19px;
+}
+
+
+/* ПОДВАЛ */
+
+.footer {
+    padding: 30px;
+    margin-top: 60px;
+
+    background-color: #080808;
+
+    text-align: center;
+    color: #888888;
+}
+
+/* ГАЛЕРЕЯ РАБОТ */
+
+.works-description {
+    margin-bottom: 35px;
+    color: #cccccc;
+}
+
+.works-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.work-card {
+    overflow: hidden;
+
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.work-card:hover {
+    transform: translateY(-7px);
+    border-color: #d6a84f;
+}
+
+.work-card img {
+    display: block;
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+}
+
+.work-card h3 {
+    margin: 0;
+    padding: 20px;
+
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    section {
+        width: 92%;
+        padding: 30px 20px;
+        margin: 25px auto;
+    }
+
+    .header {
+        width: 92%;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .hero {
+        min-height: 380px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .works-container {
+        grid-template-columns: 1fr;
+    }
+
+    .work-card img {
+        height: 280px;
+    }
+
+    .services-container,
+    .advantages-container {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
