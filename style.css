@@ -278,8 +278,20 @@ h3 {
 
 .works-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
+}
+
+.work-card {
+    grid-column: span 2;
+}
+
+.work-card:nth-child(7) {
+    grid-column: 2 / span 2;
+}
+
+.work-card:nth-child(8) {
+    grid-column: 4 / span 2;
 }
 
 .work-card {
@@ -354,8 +366,14 @@ h3 {
     }
 
     .works-container {
-        grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
+}
+
+.work-card,
+.work-card:nth-child(7),
+.work-card:nth-child(8) {
+    grid-column: 1;
+}
 
     .work-card img {
         height: 280px;
